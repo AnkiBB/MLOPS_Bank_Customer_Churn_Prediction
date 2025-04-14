@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Insurance Prediction</title>
+    <!-- Corrected the CSS path -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vehicle Insurance Prediction</h1>
+
+        <form method="post" action="/">
+            <label for="credit_score">credit_score:</label>
+            <input type="number" id="credit_score" name="credit_score" required>
+
+            <label for="France">Country France (1: Yes, 0: No):</label>
+            <input type="number" id="France" name="France" required>
+
+            <label for="Germany">Country Germany (1: Yes, 0: No):</label>
+            <input type="number" id="Germany" name="Germany" required>
+
+            <label for="Spain">Country Spain (1: Yes, 0: No):</label>
+            <input type="number" id="Spain" name="Spain" required>
+
+            <label for="gender">Gender (1: Male, 0: Female):</label>
+            <input type="number" id="gender" name="gender" required>
+
+            <label for="age">age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="tenure">tenure:</label>
+            <input type="number" id="tenure" name="tenure" required>
+
+            <label for="balance">balance:</label>
+            <input type="number" id="balance" name="balance" required>
+
+            <label for="products_number">products_number:</label>
+            <input type="number" id="products_number" name="products_number" required>
+
+            <label for="credit_card">credit_card:</label>
+            <input type="number" id="credit_card" name="credit_card" required>
+
+            <label for="active_member">active_member:</label>
+            <input type="number" id="active_member" name="active_member" required>
+
+            <label for="estimated_salary">estimated_salary:</label>
+            <input type="number" id="estimated_salary" name="estimated_salary" required>
+
+
+            <button type="submit">Predict</button>
+        </form>
+
+        <form method="get" action="/train">
+            <button type="submit" class="train-button">Train Model</button>
+        </form>
+
+        {% if context %}
+            <div class="result">
+                <h2>Result: {{ context }}</h2>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
