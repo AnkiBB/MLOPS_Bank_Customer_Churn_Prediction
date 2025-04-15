@@ -99,7 +99,7 @@ Welcome to this MLOps project, designed to demonstrate a robust pipeline for pre
 3. Configure S3 Bucket and add access keys in `constants.__init__.py`.
 
 ### Step 13: Model Evaluation and Pushing to S3
-- Create an S3 bucket named `my-model-mlopsproj` in the `us-east-1` region.
+- Create an S3 bucket named `my-model-mlopsprojbank` in the `us-east-1` region.
 - Develop code to push/pull models to/from the S3 bucket in `src.aws_storage` and `entity/s3_estimator.py`.
 
 ---
