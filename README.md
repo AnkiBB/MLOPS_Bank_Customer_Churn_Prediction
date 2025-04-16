@@ -1,5 +1,5 @@
 # MLOPS_Bank_Customer_Churn_Prediction
-This project is a complete MLOPS pipeline for a bank customer churn prediction
+This project is a complete MLOPS pipeline for a bank customer churn prediction. 
 
 Welcome to this MLOps project, designed to demonstrate a robust pipeline for predicting churning of a customer on a bank data. This project uses various tools, techniques, services, and features that go into building and deploying a machine learning pipeline for real-world data management. Follow along to learn about project setup, data processing, model deployment, and CI/CD automation!
 
